@@ -3,7 +3,7 @@
     background-image: url(/assets/images/Group2.png);
     background-position: initial;
     background-repeat: no-repeat;
-    /*overflow: hidden;*/
+    overflow: hidden;
     width: 1920px;
     height: 1080px;
 }
@@ -145,4 +145,395 @@
     position: absolute;
     top: -90px;
     left: calc(100% - 140px);
+}
+
+.about__contant {
+    background-color: #191411;
+    background-image: url(/assets/images/whybg.png);
+    background-position: initial;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 1920px;
+}
+
+.about__title {
+    font-family: 'Merriweather';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 64px;
+    line-height: 80px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-top: 0px;
+}
+
+.about__benefit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 1136px;
+    height: 287px;
+    margin-left: 392px;
+    margin-top: 60px;
+    margin-bottom: 180px;
+}
+
+.about_benefit1_title,
+.about_benefit2_title,
+.about_benefit3_title {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    padding-bottom: 24px;
+}
+
+
+.about_benefit1_text,
+.about_benefit2_text,
+.about_benefit3_text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.about_benefit1,
+.about_benefit2,
+.about_benefit3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 312px;
+    height: 287px;
+}
+
+.about_benefit1_img,
+.about_benefit2_img,
+.about_benefit3_img {
+    padding-bottom: 24px;
+}
+
+.menu__contant {
+    background-color: #191411;
+    background-image: url(/assets/images/burgers_bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 1400px;
+    overflow: hidden;
+    width: 1920px;
+    height: auto;
+}
+
+.menu__all-cards {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    width: 1240px;
+    margin-left: 360px;
+    margin-right: 360px;
+    padding: 0px;
+}
+
+.menu__card {
+    box-sizing: border-box;
+    width: 384px;
+    height: 564px;
+    background: #211A16;
+    border: 1px solid #353535;
+    border-radius: 16px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+}
+
+.menu__card_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px 24px 24px 24px;
+    width: 324px;
+}
+
+.menu__card_img {
+    width: 324px;
+}
+
+.menu__card_title {
+    width: 302px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+
+.menu__card_text {
+    width: 302px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+    margin-top: 24px;
+}
+
+.menu__card_info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 24px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    width: 324px;
+    height: 65px;
+}
+
+.menu__card_info-left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0px;
+    gap: 8px;
+    width: 49px;
+    height: 65px;
+}
+
+.menu__card_price {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    color: #FFFFFF;
+    width: 58px;
+}
+
+.menu__card_gram {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    color: #757575;
+    width: 55px;
+}
+
+.menu__card_button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 182px;
+    height: 62px;
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    border-radius: 8px;
+    margin-left: 93px;
+}
+
+.menu__card_button:hover {
+    background: linear-gradient(95.61deg, #78420c 0%, #977518 100%);
+}
+
+.menu__card_button-text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #191411;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-right: 10px;
+    padding-bottom: 20px;
+    text-decoration: none;
+}
+
+.menu__card_button-img {
+    padding-right: 35px;
+}
+
+.order__contant {
+    margin-top: 180px;
+    background-color: #191411;
+    background-image: url(/assets/images/order_bg.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    overflow: hidden;
+    width: 1920px;
+    height: 875px;
+    padding-bottom: 180px;
+}
+
+.order__contant-info {
+    display: flex;
+    flex-direction: row;
+}
+
+.order__image-photo {
+    top: 0;
+    right: calc(100% - 764px);
+    z-index: -1;
+}
+
+.order__form {
+    display: flex;
+    flex-direction: column;
+    width: 424px;
+    height: 555px;
+    left: 1034px;
+    margin-top: 60px;
+    background: #211A16;
+    border: 1px solid #353535;
+    border-radius: 16px;
+}
+
+.order__form-title {
+    width: 344px;
+    height: 87px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-left: 40px;
+    margin-top: 60px
+}
+
+.order__form-inputs {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 344px;
+    height: 308px;
+    margin-left: 40px;
+    margin-top: 40px;
+    margin-right: 40px;
+    margin-bottom: 60px;
+}
+
+.order__form-input-order {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 16px 10px;
+    gap: 167px;
+    width: 344px;
+    height: 62px;
+    background: #211A16;
+    border-radius: 8px;
+}
+
+#order-list {
+    background: #211A16;
+    color: #FFFFFF;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #757575;
+}
+
+.order__form-input {
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    width: 344px;
+    height: 70px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 140%;
+    color: #757575;
+}
+
+.order-list-product {
+    width: 344px;
+    height: 62px;
+    background: #211A16;
+    border-radius: 8px;
+    border: 1px solid #E2B438;
+    padding-left: 10px;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.order-input {
+    padding: 20px 10px;
+    width: 340px;
+    height: 52px;
+    box-sizing: border-box;
+    outline: none;
+    background: #211A16;
+    border-radius: 9px;
+    border: 1px solid transparent;
+    color: #FFFFFF;
+}
+
+.order__form-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 19px 50px;
+    width: 344px;
+    height: 62px;
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    border-radius: 8px;
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    text-align: center;
+    color: #191411;
+}
+
+.order__form-button:hover {
+    background: linear-gradient(95.61deg, #98520c 0%, #c69610 100%);
+}
+
+.footer {
+    width: 1920px;
+    height: 170px;
+}
+
+.footer__contact {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: #191411;
+    padding-top: 60px;
+}
+
+.footer__text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #FFFFFF;
 }

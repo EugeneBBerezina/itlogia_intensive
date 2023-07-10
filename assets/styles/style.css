@@ -43,6 +43,7 @@
 .menu_list-text:hover {
     color: #a51919;
     text-decoration: underline;
+    cursor: pointer;
 }
 
 .menuitem {
@@ -53,6 +54,24 @@
 .menuitem1,
 .menuitem2 {
     padding-right: 88px;
+}
+
+.change-currency-text {
+    font-family: 'Gilroy';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+    cursor: pointer;
+    border: 1px solid #FFFFFF;
+    border-radius: 5px;
+    box-sizing: border-box;
+    width: 55px;
+    top: 42px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .main__contant {
@@ -96,6 +115,7 @@
 
 .buttonstyle_ellipse:hover {
     background: linear-gradient(95.61deg, #D3320F 0%, #531507 100%);
+    cursor: pointer;
 }
 
 .button_text-ellipse {
@@ -113,16 +133,9 @@
     text-decoration: none
 }
 
-.buttonstyle_square {
-    gap: 10px;
-    width: 260px;
-    height: 62px;
-    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
-    border-radius: 8px;
-}
-
-.buttonstyle_square:hover {
+.button_text-square:hover {
     background: linear-gradient(95.61deg, #DA8023 0%, #836002 100%);
+    cursor: pointer;
 }
 
 .button_text-square {
@@ -139,6 +152,11 @@
     text-align: center;
     color: #191411;
     text-decoration: none;
+    gap: 10px;
+    width: 260px;
+    height: 62px;
+    background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
+    border-radius: 8px;
 }
 
 .main_img {
@@ -308,7 +326,7 @@
     align-items: flex-start;
     padding: 0px;
     gap: 8px;
-    width: 49px;
+    width: 100px;
     height: 65px;
 }
 
@@ -319,7 +337,7 @@
     font-size: 32px;
     line-height: 39px;
     color: #FFFFFF;
-    width: 58px;
+    width: 110px;
 }
 
 .menu__card_gram {
@@ -342,11 +360,12 @@
     height: 62px;
     background: linear-gradient(95.61deg, #DA8023 0%, #E2B438 100%);
     border-radius: 8px;
-    margin-left: 93px;
+    margin-left: 50px;
 }
 
 .menu__card_button:hover {
     background: linear-gradient(95.61deg, #78420c 0%, #977518 100%);
+    cursor: pointer;
 }
 
 .menu__card_button-text {

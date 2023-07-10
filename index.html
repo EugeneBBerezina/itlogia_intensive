@@ -26,22 +26,21 @@
             <div class="header__navigation">
                 <nav>
                     <ul class="menu_list">
-                        <li class="menuitem">
-                            <div class="menuitem1"><a href="#why" class="menu_list-text">Почему у нас</a></div>
+                        <li class="menuitem1">
+                            <div class="menuitem"><a data-link="why" class="menu_list-text">Почему у нас</a></div>
                         </li>
-                        <li class="menuitem">
-                            <div class="menuitem2"><a href="#menu" class="menu_list-text">Меню бургеров</a></div>
+                        <li class="menuitem2">
+                            <div class="menuitem"><a data-link="menu" class="menu_list-text">Меню бургеров</a></div>
                         </li>
-                        <li class="menuitem">
-                            <div class="menuitem3"><a href="#order" class="menu_list-text">Оформление заказа</a></div>
+                        <li class="menuitem3">
+                            <div class="menuitem"><a data-link="order" class="menu_list-text">Оформление заказа</a></div>
                         </li>
                     </ul>
                 </nav>
 
-
             </div>
             <!--Контейнер для логотипа валюты-->
-            <div><a href="#"> <img src="assets/images/currency.png" alt="Перевод валюты"></a></div>
+            <div class="change-currency-text" id="change-currency" title="Изменить валюту">$</div>
         </header>
 
         <main class="main__contant">
@@ -61,7 +60,7 @@
                 </div>
                 <!--Контейнер для кнопки меню №2-->
                 <div class="buttonstyle_square">
-                    <a href="#" class="button_text-square">Смотреть меню</a>
+                    <button class="button_text-square" id="button_text-square-action">Смотреть меню</button>
                 </div>
 
             </div>
@@ -115,7 +114,7 @@
     </div>
 
     <!--Контейнер для блока третьей части страницы-->
-    <div class="menu__contant">
+    <div class="menu__contant" id="menu__contant">
         <!--Контейнер для заголовка-->
         <h2 class="about__title" id="menu">ВЫБЕРИТЕ СВОЙ БУРГЕР</h2>
         <!--Контейнер для всех карточек-->
@@ -137,12 +136,12 @@
                         <!--Контейнер для цены и граммовки первой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены первой карточки-->
-                            <div class="menu__card_price">8 $</div>
+                            <div class="menu__card_price" data-base-price="8">8 $</div>
                             <!--Контейнер для граммовки первой карточки-->
                             <div class="menu__card_gram">360 гр</div>
                         </div>
                         <!--Контейнер для кнопки первой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -165,12 +164,12 @@
                         <!--Контейнер для цены и граммовки второй карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены второй карточки-->
-                            <div class="menu__card_price">7 $</div>
+                            <div class="menu__card_price" data-base-price="7">7 $</div>
                             <!--Контейнер для граммовки второй карточки-->
                             <div class="menu__card_gram">390 гр</div>
                         </div>
                         <!--Контейнер для кнопки второй карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
 
@@ -194,12 +193,12 @@
                         <!--Контейнер для цены и граммовки третьей карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены третьей карточки-->
-                            <div class="menu__card_price">10 $</div>
+                            <div class="menu__card_price" data-base-price="10">10 $</div>
                             <!--Контейнер для граммовки третьей карточки-->
                             <div class="menu__card_gram">420 гр</div>
                         </div>
                         <!--Контейнер для кнопки третьей карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
 
@@ -223,12 +222,12 @@
                         <!--Контейнер для цены и граммовки четвертой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены четвертой карточки-->
-                            <div class="menu__card_price">7 $</div>
+                            <div class="menu__card_price" data-base-price="7">7 $</div>
                             <!--Контейнер для граммовки четвертой карточки-->
                             <div class="menu__card_gram">220 гр</div>
                         </div>
                         <!--Контейнер для кнопки четвертой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -251,12 +250,12 @@
                         <!--Контейнер для цены и граммовки пятой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены пятой карточки-->
-                            <div class="menu__card_price">8 $</div>
+                            <div class="menu__card_price" data-base-price="8">8 $</div>
                             <!--Контейнер для граммовки пятой карточки-->
                             <div class="menu__card_gram">220 гр</div>
                         </div>
                         <!--Контейнер для кнопки пятой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -280,12 +279,12 @@
                         <!--Контейнер для цены и граммовки шестой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены шестой карточки-->
-                            <div class="menu__card_price">9 $</div>
+                            <div class="menu__card_price" data-base-price="9">9 $</div>
                             <!--Контейнер для граммовки шестой карточки-->
                             <div class="menu__card_gram">320 гр</div>
                         </div>
                         <!--Контейнер для кнопки шестой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -309,12 +308,12 @@
                         <!--Контейнер для цены и граммовки седьмой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены седьмой карточки-->
-                            <div class="menu__card_price">8 $</div>
+                            <div class="menu__card_price" data-base-price="8">8 $</div>
                             <!--Контейнер для граммовки седьмой карточки-->
                             <div class="menu__card_gram">280 гр</div>
                         </div>
                         <!--Контейнер для кнопки седьмой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -338,12 +337,12 @@
                         <!--Контейнер для цены и граммовки восьмой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены восьмой карточки-->
-                            <div class="menu__card_price">7 $</div>
+                            <div class="menu__card_price" data-base-price="7">7 $</div>
                             <!--Контейнер для граммовки восьмой карточки-->
                             <div class="menu__card_gram">380 гр</div>
                         </div>
                         <!--Контейнер для кнопки восьмой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -367,12 +366,12 @@
                         <!--Контейнер для цены и граммовки девятой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены девятой карточки-->
-                            <div class="menu__card_price">11 $</div>
+                            <div class="menu__card_price" data-base-price="11">11 $</div>
                             <!--Контейнер для граммовки девятой карточки-->
                             <div class="menu__card_gram">400 гр</div>
                         </div>
                         <!--Контейнер для кнопки девятой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -397,12 +396,12 @@
                         <!--Контейнер для цены и граммовки десятой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены десятой карточки-->
-                            <div class="menu__card_price">9 $</div>
+                            <div class="menu__card_price" data-base-price="9">9 $</div>
                             <!--Контейнер для граммовки десятой карточки-->
                             <div class="menu__card_gram">300 гр</div>
                         </div>
                         <!--Контейнер для кнопки десятой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -427,12 +426,12 @@
                         <!--Контейнер для цены и граммовки одиннадцатой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены одиннадцатой карточки-->
-                            <div class="menu__card_price">8 $</div>
+                            <div class="menu__card_price" data-base-price="8">8 $</div>
                             <!--Контейнер для граммовки одиннадцатой карточки-->
                             <div class="menu__card_gram">320 гр</div>
                         </div>
                         <!--Контейнер для кнопки одиннадцатой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -456,12 +455,12 @@
                         <!--Контейнер для цены и граммовки двенадцатой карточки-->
                         <div class="menu__card_info-left">
                             <!--Контейнер для цены двенадцатой карточки-->
-                            <div class="menu__card_price">9 $</div>
+                            <div class="menu__card_price" data-base-price="9">9 $</div>
                             <!--Контейнер для граммовки двенадцатой карточки-->
                             <div class="menu__card_gram">360 гр</div>
                         </div>
                         <!--Контейнер для кнопки двенадцатой карточки-->
-                        <div class="menu__card_button"> <a href="#" class="menu__card_button-text">Заказать</a>
+                        <div class="menu__card_button"> <a data-link="order_menu" class="menu__card_button-text">Заказать</a>
                             <img class="menu__card_button-img" src="assets/images/shopping-card.png" alt="Корзина">
                         </div>
                     </div>
@@ -487,32 +486,18 @@
                         Заполните все данные и наш менеджер свяжется с вами для подтверждения заказа
                     </div>
                     <div class="order__form-inputs">
-                        <div class="order__form-input-order">
-                            <select id="order-list" class="order-list-product">
-                                <option class="order-list_text" value="order">Ваш заказ</option>
-                                <option class="order-list_text" value="order1">Бургер чеддер & бекон</option>
-                                <option class="order-list_text" value="order2">BBQ с беконом и курицей</option>
-                                <option class="order-list_text" value="order3">Дабл биф бургер</option>
-                                <option class="order-list_text" value="order4">Баварский бургер</option>
-                                <option class="order-list_text" value="order5">Бекон чизбургер</option>
-                                <option class="order-list_text" value="order6">Индиана бургер</option>
-                                <option class="order-list_text" value="order7">Вегги бургер</option>
-                                <option class="order-list_text" value="order8">Плаксивый Джо</option>
-                                <option class="order-list_text" value="order9">Двойной чиз бургер</option>
-                                <option class="order-list_text" value="order10">Фрешбургер</option>
-                                <option class="order-list_text" value="order11">Цуккини бургер</option>
-                                <option class="order-list_text" value="order12">Двойной бургер чеддар</option>
-                            </select>
-                        </div>
-
+                        
                         <div class="order__form-input">
-                            <input type="text" placeholder="Ваше имя" class="order-input">
+                            <input type="text" placeholder="Ваш заказ" class="order-input" id="burger">
                         </div>
                         <div class="order__form-input">
-                            <input type="text" placeholder="Ваш телефон" class="order-input">
+                            <input type="text" placeholder="Ваше имя" class="order-input" id="name">
+                        </div>
+                        <div class="order__form-input">
+                            <input type="text" placeholder="Ваш телефон" class="order-input" id="phone">
                         </div>
                         <div class="order__form-input-button">
-                            <input class="order__form-button" type="submit" value="Оформить заказ">
+                            <input class="order__form-button" type="submit" value="Оформить заказ" id="order-action">
                         </div>
                     </div>
                 </div>
@@ -528,6 +513,7 @@
 
             </footer>
 
+            <script src="scripts/script.js"></script>
 </body>
 
 </html>
